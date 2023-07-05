@@ -1,0 +1,25 @@
+// extends typography
+%heading {
+  font-family: $fontSecondary;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+%anchorLink {
+  color: black;
+  text-decoration: none;
+}
+
+%paragraph {
+  font-family: $fontPrimary;
+  font-weight: 400;
+}
+
+%regularText {
+}
+
+%boldText {
+  font-family: $fontPrimary;
+  font-weight: 400;
+}

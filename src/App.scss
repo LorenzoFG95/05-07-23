@@ -1,0 +1,99 @@
+// @import "./scss/variables/colors.scss";
+@import "./scss/typography/all.scss";
+@import "./scss/layouts/all.scss";
+@import "./scss/helpers/all.scss";
+@import "./scss/components/ui/buttons.scss";
+
+body {
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 12px;
+}
+
+.Button {
+  background-color: yellow;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  &.space-between {
+    justify-content: space-between;
+  }
+}
+
+.row-g {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 10px;
+}
+
+.elevationtest {
+  box-shadow: $elevationSmall;
+  transition: $elevationAnim;
+
+  &:hover {
+    box-shadow: $elevationLarge;
+  }
+  &.classe2 {
+    background-color: yellow;
+  }
+
+  &__container {
+    background-color: red;
+
+    &--light {
+      background-color: green;
+    }
+  }
+}
+
+ul {
+  color: yellow;
+  font-size: 11px;
+  li {
+    font-size: rem(37px);
+  }
+}
+
+.wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+
+  @include xs {
+    background: purple;
+    @include size(40px, 100px);
+  }
+
+  @include sm {
+    background: yellow;
+    @include size(40rem, 100px);
+  }
+
+  @include md {
+    background: green;
+  }
+
+  @include lg {
+    background: violet;
+  }
+
+  @include xl {
+    background: orange;
+  }
+}

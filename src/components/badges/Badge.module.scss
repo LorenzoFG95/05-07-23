@@ -1,0 +1,17 @@
+.Badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid;
+  cursor: pointer;
+  transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+  border-radius: 12px;
+  padding: 5px 15px;
+  background-color: black;
+  color: white;
+  &.fill {
+    color: black;
+    background-color: white;
+  }
+}

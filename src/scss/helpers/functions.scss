@@ -1,0 +1,21 @@
+@use "sass:math";
+
+$basesize: 16px;
+// conversione da px a rem
+@function rem($px) {
+  @return math.div($px, $basesize) * 1rem;
+}
+
+@function colorShade($color, $percentage) {
+  @if ($percentage > 50) {
+    @return mix(black, $color, $percentage);
+  } @else {
+    @return mix(white, $color, $percentage);
+  }
+}
+
+//columns
+$columnCount: 12;
+@function column($col) {
+  @return math.div(100%, $columnCount) * $col;
+}

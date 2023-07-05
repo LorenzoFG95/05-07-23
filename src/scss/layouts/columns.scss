@@ -1,0 +1,207 @@
+.col-1 {
+  width: column(1);
+  background-color: $primary;
+}
+.col-2 {
+  width: column(2);
+  background-color: $primary;
+}
+.col-3 {
+  width: column(3);
+  background-color: $primary;
+}
+.col-4 {
+  width: column(4);
+  background-color: $primary;
+}
+.col-5 {
+  width: column(5);
+  background-color: $primary;
+}
+.col-6 {
+  width: column(6);
+  background-color: $primary;
+}
+.col-7 {
+  width: column(7);
+  background-color: $primary;
+}
+.col-8 {
+  width: column(8);
+  background-color: $primary;
+}
+.col-9 {
+  width: column(9);
+  background-color: $primary;
+}
+.col-10 {
+  width: column(10);
+  background-color: $primary;
+}
+.col-11 {
+  width: column(11);
+  background-color: $primary;
+}
+.col-12 {
+  width: column(12);
+  background-color: $primary;
+}
+
+// column xs
+@include xs {
+  .col-xs-1 {
+    width: column(1);
+  }
+  .col-xs-2 {
+    width: column(2);
+    background-color: $primary;
+  }
+  .col-xs-3 {
+    width: column(3);
+    background-color: $primary;
+  }
+  .col-xs-4 {
+    width: column(4);
+    background-color: $primary;
+  }
+  .col-xs-5 {
+    width: column(5);
+    background-color: $primary;
+  }
+  .col-xs-6 {
+    width: column(6);
+    background-color: $primary;
+  }
+  .col-xs-7 {
+    width: column(7);
+    background-color: $primary;
+  }
+  .col-xs-8 {
+    width: column(8);
+    background-color: $primary;
+  }
+  .col-xs-9 {
+    width: column(9);
+    background-color: $primary;
+  }
+  .col-xs-10 {
+    width: column(10);
+    background-color: $primary;
+  }
+  .col-xs-11 {
+    width: column(11);
+    background-color: $primary;
+  }
+  .col-xs-12 {
+    width: column(12);
+    background-color: $primary;
+  }
+}
+
+// column sm
+@include sm {
+  .col-sm-1 {
+    width: column(1);
+  }
+  .col-sm-2 {
+    width: column(2);
+    background-color: $primary;
+  }
+  .col-sm-3 {
+    width: column(3);
+    background-color: $primary;
+  }
+  .col-sm-4 {
+    width: column(4);
+    background-color: $primary;
+  }
+  .col-sm-5 {
+    width: column(5);
+    background-color: $primary;
+  }
+  .col-sm-6 {
+    width: column(6);
+    background-color: $primary;
+  }
+  .col-sm-7 {
+    width: column(7);
+    background-color: $primary;
+  }
+  .col-sm-8 {
+    width: column(8);
+    background-color: $primary;
+  }
+  .col-sm-9 {
+    width: column(9);
+    background-color: $primary;
+  }
+  .col-sm-10 {
+    width: column(10);
+    background-color: $primary;
+  }
+  .col-sm-11 {
+    width: column(11);
+    background-color: $primary;
+  }
+  .col-sm-12 {
+    width: column(12);
+    background-color: $primary;
+  }
+}
+
+// column md
+@include md {
+  .col-md-1 {
+    width: column(1);
+  }
+  .col-md-2 {
+    width: column(2);
+    background-color: $primary;
+  }
+  .col-md-3 {
+    width: column(3);
+    background-color: $primary;
+  }
+  .col-md-4 {
+    width: column(4);
+    background-color: $primary;
+  }
+  .col-md-5 {
+    width: column(5);
+    background-color: $primary;
+  }
+  .col-md-6 {
+    width: column(6);
+    background-color: $primary;
+  }
+  .col-md-7 {
+    width: column(7);
+    background-color: $primary;
+  }
+  .col-md-8 {
+    width: column(8);
+    background-color: $primary;
+  }
+  .col-md-9 {
+    width: column(9);
+    background-color: $primary;
+  }
+  .col-md-10 {
+    width: column(10);
+    background-color: $primary;
+  }
+  .col-md-11 {
+    width: column(11);
+    background-color: $primary;
+  }
+  .col-md-12 {
+    width: column(12);
+    background-color: $primary;
+  }
+}
+
+$gutter: 16px;
+// column gutter
+.col-g-1 {
+  width: calc(column(1) - $gutter/2);
+}

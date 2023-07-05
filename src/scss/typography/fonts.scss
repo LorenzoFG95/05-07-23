@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@400;600;700&display=swap");
+
+.heading1 {
+  @extend %heading;
+}
+
+.heading2 {
+  @extend %heading;
+  @extend %anchorLink;
+}
+
+.heading3 {
+  @extend %paragraph;
+}
+
+.p-small {
+}
+
+.cardProduct {
+  @extend %heading;
+}

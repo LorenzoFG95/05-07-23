@@ -1,0 +1,65 @@
+.Button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid;
+  padding: 10px;
+  gap: 4px;
+  cursor: pointer;
+  transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+
+  &.iconLeft {
+    flex-direction: row-reverse;
+  }
+
+  &.fill {
+    @include buttonFill(fill);
+    &:hover {
+      @include buttonFill(outline);
+    }
+  }
+
+  &.outline {
+    @include buttonFill(outline);
+    &:hover {
+      @include buttonFill(fill);
+    }
+  }
+
+  &.xl {
+    @include buttonSize(xl);
+  }
+
+  &.md {
+    @include buttonSize(md);
+  }
+
+  &.sm {
+    @include buttonSize(sm);
+  }
+
+  &.square {
+    border-radius: 50%;
+    width: rem(48px);
+    height: rem(48px);
+  }
+  &.pill {
+    border-radius: 50px;
+  }
+  &.rounded {
+    border-radius: 10px;
+  }
+  &.text1 {
+    background-color: rgba(0, 0, 0, 0);
+    text-decoration: underline;
+    border: 0;
+  }
+  &.text2 {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

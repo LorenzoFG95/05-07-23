@@ -1,0 +1,46 @@
+.Button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid;
+  gap: 4px;
+  cursor: pointer;
+  transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+
+  &.iconLeft {
+    flex-direction: row-reverse;
+  }
+
+  &.fill {
+    @include buttonFill(fill);
+    &:hover {
+      @include buttonFill(outline);
+    }
+  }
+
+  &.outline {
+    @include buttonFill(outline);
+    &:hover {
+      @include buttonFill(fill);
+    }
+  }
+
+  &.xl {
+    @include buttonSize(xl);
+  }
+
+  &.md {
+    @include buttonSize(md);
+  }
+
+  &.sm {
+    @include buttonSize(sm);
+  }
+
+  &.square {
+    border-radius: 50%;
+    width: rem(48px);
+    height: rem(48px);
+  }
+}

@@ -1,0 +1,54 @@
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin max-width($width) {
+  max-width: $width;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@mixin flexbox() {
+  display: flex;
+}
+
+@mixin justify-content($value) {
+  justify-content: $value;
+}
+
+@mixin align-items($value) {
+  align-items: $value;
+}
+
+@mixin centerPosition() {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin buttonFill($theme) {
+  @if ($theme == "outline") {
+    background-color: $light;
+    border-color: $dark;
+    color: $dark;
+  } @else {
+    background-color: $dark;
+    border-color: $dark;
+    color: $light;
+  }
+}
+
+@mixin buttonSize($size) {
+  @if $size == "xl" {
+    padding: rem($p-sm) rem($p-xl);
+    font-size: rem($buttonXl);
+  } @else if $size == "sm" {
+    padding: rem($p-sm) rem($p-sm);
+    font-size: rem($buttonSm);
+  } @else {
+    padding: rem($p-sm) rem($p-md);
+    font-size: rem($buttonMd);
+  }
+}
