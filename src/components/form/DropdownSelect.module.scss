@@ -1,0 +1,29 @@
+.dropdownContainer {
+  position: relative;
+}
+
+.dropdown {
+  cursor: pointer;
+  padding: rem($p-xs) rem($p-sm);
+  border-radius: rem($roundedXs);
+  border: 1px solid $inputBorder;
+}
+
+.options {
+  position: absolute;
+  width: 100%;
+  background-color: red;
+  visibility: hidden;
+  opacity: 0;
+  list-style-type: none;
+  transition: all 0.5s ease;
+
+  &.open {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.option {
+  cursor: pointer;
+}

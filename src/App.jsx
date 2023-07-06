@@ -4,14 +4,71 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import "./App.scss";
 import { Button } from "./components/buttons";
-import { InputToggle } from "./components/form";
+import {
+  InputText,
+  InputPassword,
+  InputToggle,
+  InputSelect,
+  DropdownSelect,
+} from "./components/form";
 import Badge from "./components/badges";
 import useSound from "use-sound";
 
 function App() {
+  const [inputTextValue, setInputTextValue] = useState();
+  const [inputPasswordValue, setInputPasswordValue] = useState();
+  const [inputSelectValue, setInputSelectValue] = useState();
+  const [inputDropdownValue, setInpuDropdownValue] = useState();
+  const options = {
+    name: "products",
+    id: "products",
+    options: [
+      {
+        id: 1,
+        label: "Apples",
+        value: "apples",
+      },
+      {
+        id: 2,
+        label: "Bananas",
+        value: "bananas",
+      },
+      {
+        id: 3,
+        label: "Coconut",
+        value: "coconut",
+      },
+    ],
+  };
   return (
     <>
-      <h2>Buttons (con suono)</h2>
+      <InputText
+        id={"name"}
+        name="name"
+        placeholder="Your name"
+        label={"name"}
+        // disabled
+        // error
+        errorMessage={"Inserisci il tuo nome"}
+        handleChange={setInputTextValue}
+      />
+      <InputPassword
+        id={"password"}
+        name="password"
+        placeholder="Your password"
+        label={"password"}
+        // error
+        // errorMessage={"Inserisci la tua password"}
+        handleChange={setInputPasswordValue}
+      />
+      <InputSelect
+        options={options}
+        defaultValue={options?.options[0]?.value}
+        handleChange={setInputSelectValue}
+      />
+      <DropdownSelect options={options} handleChange={setInpuDropdownValue} />
+      {/* <InputSelect options={options} default /> */}
+      {/* <h2>Buttons (con suono)</h2>
       <div className="container">
         <Button label="Click me" pill size={"xl"} />
         <Button label="Click me" pill />
@@ -50,7 +107,7 @@ function App() {
       <h2>Inputs</h2>
       <div className="container">
         <InputToggle />
-      </div>
+      </div> */}
 
       {/* <div className="container">
         <div className="row">
