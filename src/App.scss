@@ -3,6 +3,7 @@
 @import "./scss/layouts/all.scss";
 @import "./scss/helpers/all.scss";
 @import "./scss/components/ui/buttons.scss";
+@import "./scss/utilities/all.scss";
 
 body {
   font-size: 16px;
@@ -63,11 +64,7 @@ body {
 }
 
 ul {
-  color: yellow;
-  font-size: 11px;
-  li {
-    font-size: rem(37px);
-  }
+  list-style-type: none;
 }
 
 .wrapper {

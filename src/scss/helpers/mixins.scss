@@ -20,6 +20,11 @@
 @mixin align-items($value) {
   align-items: $value;
 }
+@mixin flexCenter() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 @mixin centerPosition() {
   position: absolute;

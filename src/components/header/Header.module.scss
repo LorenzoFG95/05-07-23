@@ -1,0 +1,40 @@
+.contenitore {
+  width: 100%;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: $primary;
+  z-index: 10;
+}
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  background-color: yellow;
+}
+
+.menuItem {
+  position: relative;
+  &__label {
+    cursor: pointer;
+  }
+
+  &__dropdown {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    &.open {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}

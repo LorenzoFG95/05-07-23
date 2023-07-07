@@ -10,9 +10,12 @@ import {
   InputToggle,
   InputSelect,
   DropdownSelect,
+  InputCheckbox,
 } from "./components/form";
 import Badge from "./components/badges";
 import useSound from "use-sound";
+import Header from "./components/header/Header";
+import Hero from "./components/hero";
 
 function App() {
   const [inputTextValue, setInputTextValue] = useState();
@@ -42,7 +45,20 @@ function App() {
   };
   return (
     <>
-      <InputText
+      <Header />
+      <Hero />
+      <InputCheckbox />
+      <InputCheckbox />
+      <InputCheckbox />
+      <InputCheckbox />
+      <InputCheckbox />
+      <InputCheckbox />
+      <InputCheckbox />
+      <InputCheckbox />
+      <InputCheckbox />
+      <InputCheckbox />
+      <InputCheckbox />
+      {/* <InputText
         id={"name"}
         name="name"
         placeholder="Your name"
@@ -66,7 +82,7 @@ function App() {
         defaultValue={options?.options[0]?.value}
         handleChange={setInputSelectValue}
       />
-      <DropdownSelect options={options} handleChange={setInpuDropdownValue} />
+      <DropdownSelect options={options} handleChange={setInpuDropdownValue} /> */}
       {/* <InputSelect options={options} default /> */}
       {/* <h2>Buttons (con suono)</h2>
       <div className="container">
